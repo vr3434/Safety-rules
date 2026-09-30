@@ -299,24 +299,24 @@ ol > li:not([class]) {
   font-size: 64px;
 }
 
-.box-22 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1300px;
-  height: 80px;
-  border-radius: 67px;
-  background-color: #00f034;
-  outline: 1px solid #000000;
-  outline-offset: -1px;
-}
-
 .box-23 {
   position: absolute;
   left: 70px;
   top: 830px;
   width: 1300px;
   height: 80px;
+}
+
+.box-24 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1300px;
+  height: 80px;
+  border-radius: 67px;
+  background-color: #72d700;
+  outline: 1px solid #000000;
+  outline-offset: -1px;
 }
 
 .text-17 {
@@ -393,6 +393,19 @@ ol > li:not([class]) {
   font-size: 64px;
 }
 
+.text-25 {
+  position: absolute;
+  left: 65px;
+  top: 2px;
+  width: 1170px;
+  height: 78px;
+  font-family: 'Iosevka Charon', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
 .chatgpt-image-30-2026-09-16-33-1 {
   position: absolute;
   left: 17px;
@@ -401,4 +414,79 @@ ol > li:not([class]) {
   height: 540px;
   border-radius: 34px;
   object-fit: cover;
+}
+
+.text-28-span-1 {
+  font-size: 64px;
+}
+
+.box-46 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1300px;
+  height: 80px;
+  border-radius: 67px;
+  background-color: #ff0000;
+  outline: 1px solid #000000;
+  outline-offset: -1px;
+}
+
+.text-32 {
+  position: absolute;
+  left: 54px;
+  top: 558px;
+  width: 1387px;
+  height: 197px;
+  font-family: 'Iosevka Charon', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ff0000;
+  text-align: center;
+}
+
+.text-33-span-1 {
+  font-size: 64px;
+}
+
+.text-37 {
+  position: absolute;
+  left: 26px;
+  top: 558px;
+  width: 1387px;
+  height: 197px;
+  font-family: 'Iosevka Charon', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #0077ff;
+  text-align: center;
+}
+
+.text-38-span-1 {
+  font-size: 64px;
+}
+
+.box-64 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1300px;
+  height: 80px;
+  border-radius: 67px;
+  background-color: #ff0004;
+  outline: 1px solid #000000;
+  outline-offset: -1px;
+}
+
+.text-42 {
+  position: absolute;
+  left: 17px;
+  top: 566px;
+  width: 1387px;
+  height: 197px;
+  font-family: 'Iosevka Charon', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ff0000;
+  text-align: center;
 }
