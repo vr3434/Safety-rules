@@ -5543,3 +5543,180 @@ a.prototype-link {
     line-height: 1.35;
   }
 }
+
+
+/* Shared responsive layout for all exported course screens */
+body {
+  background: #f7fbfb;
+  color: #003234;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(14px, 2.2vw, 26px);
+  width: min(100%, 1440px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 56px) clamp(16px, 4vw, 52px);
+  overflow: hidden;
+  background: #fff;
+  border-radius: 24px;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > p {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.35;
+  font-size: clamp(20px, 2.6vw, 36px);
+  white-space: pre-line;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > p:first-of-type {
+  font-size: clamp(24px, 3.4vw, 44px);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 760px);
+  max-height: 380px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > a.prototype-link {
+  display: contents;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > [class^="group-"],
+[class^="desktop-"]:not(.desktop-1-1) > a.prototype-link > [class^="group-"] {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 820px);
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  overflow: hidden;
+  background: #319bff;
+  border: 1px solid #003234;
+  border-radius: 28px;
+  box-shadow: 0 4px 0 rgba(0, 50, 52, .12);
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > [class^="group-"] > [class^="rectangle-"],
+[class^="desktop-"]:not(.desktop-1-1) > a.prototype-link > [class^="group-"] > [class^="rectangle-"] {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #319bff;
+  border: 0;
+  border-radius: inherit;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) [class^="group-"] > p {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 1.3;
+  font-size: clamp(18px, 2.2vw, 30px);
+  white-space: pre-line;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > [class^="rectangle-"] {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: clamp(90px, 14vw, 170px);
+  pointer-events: none;
+  opacity: .24;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > [class^="rectangle-"]:nth-of-type(2) {
+  top: 28%;
+  left: 12%;
+  width: 76%;
+  opacity: .12;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) > p[class*="text-rgb-255-0-0"],
+[class^="desktop-"]:not(.desktop-1-1) > p[class*="text-rgb-0-119-255"] {
+  width: min(100%, 900px);
+  padding: 18px 22px;
+  background: #f2fbff;
+  border: 1px solid rgba(0, 119, 255, .22);
+  border-radius: 20px;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) a:hover {
+  filter: brightness(.97);
+}
+
+[class^="desktop-"]:not(.desktop-1-1) .text-white {
+  color: #fff;
+}
+
+[class^="desktop-"]:not(.desktop-1-1) .text-black {
+  color: #003234;
+}
+
+@media (min-width: 900px) {
+  [class^="desktop-"]:not(.desktop-1-1) {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  [class^="desktop-"]:not(.desktop-1-1) > img {
+    max-height: 340px;
+  }
+}
+
+@media (max-width: 600px) {
+  [class^="desktop-"]:not(.desktop-1-1) {
+    gap: 16px;
+    min-height: 100vh;
+    padding: 20px 14px 32px;
+    border-radius: 0;
+  }
+
+  [class^="desktop-"]:not(.desktop-1-1) > p,
+  [class^="desktop-"]:not(.desktop-1-1) > p:first-of-type {
+    font-size: clamp(18px, 5vw, 25px);
+    line-height: 1.35;
+  }
+
+  [class^="desktop-"]:not(.desktop-1-1) > img {
+    max-height: 240px;
+  }
+
+  [class^="desktop-"]:not(.desktop-1-1) > [class^="group-"],
+  [class^="desktop-"]:not(.desktop-1-1) > a.prototype-link > [class^="group-"] {
+    min-height: 64px;
+    padding: 14px 16px;
+    border-radius: 20px;
+  }
+}
